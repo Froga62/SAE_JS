@@ -1,0 +1,155 @@
+div.Calculatrice {
+    background-color: rgb(139, 45, 132);
+    width: 500px;
+    height: 725px;
+    margin-left: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+div.on_off {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+div.bout {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    grid-template-rows: repeat(4, 125px);
+}
+canvas {
+    background-color: black;
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+}
+
+#zero {
+    grid-column: 1;
+    grid-row: 4;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#point {
+    grid-column: 2;
+    grid-row: 4;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#egale {
+    grid-column: 3;
+    grid-row: 4;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#plus {
+    grid-column: 4;
+    grid-row: 4;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#un {
+    grid-column: 1;
+    grid-row: 3;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#deux {
+    grid-column: 2;
+    grid-row: 3;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#trois {
+    grid-column: 3;
+    grid-row: 3;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#moin {
+    grid-column: 4;
+    grid-row: 3;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#quatre {
+    grid-column: 1;
+    grid-row: 2;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#cinq {
+    grid-column: 2;
+    grid-row: 2;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#six {
+    grid-column: 3;
+    grid-row: 2;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#division {
+    grid-column: 4;
+    grid-row: 2;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#sept {
+    grid-column: 1;
+    grid-row: 1;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#huit {
+    grid-column: 2;
+    grid-row: 1;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#neuf {
+    grid-column: 3;
+    grid-row: 1;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}
+
+#multiplication {
+    grid-column: 4;
+    grid-row: 1;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(45, 139, 61);
+}

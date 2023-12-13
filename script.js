@@ -3,6 +3,7 @@ var ctx = canvas.getContext("2d");
 var middle = canvas.width / 2;
 ctx.textAlign = "right";
 var ch = "";
+var mode = 0;
 
 function on_off() {
     if (canvas.style.backgroundColor == "black") {
@@ -46,4 +47,19 @@ function suppr() {
     ch = ch.join("");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
+}
+
+function mode_fonction() {
+    if (mode == 1){
+        mode = 0;
+        ctx.clearRect(0,0, canvas.width, canvas.height);
+        btn = document.getElementById("mode");
+        btn.textContent = "Mode Calcul";
+        
+    } else {
+        mode = 1;
+        ctx.clearRect(0,0, canvas.width, canvas.height);
+        btn = document.getElementById("mode");
+        btn.textContent = "Mode Fonction";
+    }
 }

@@ -55,17 +55,16 @@ function mode_fonction() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         btn = document.getElementById("mode");
         btn.textContent = "Mode Calcul";
-        var new_btn = document.createElement("button");
-        new_btn.textContent = "X";
-        new_btn.id = "new";
-        var div = document.getElementById("on_off");
-        div.appendChild(new_btn);
+        var btn2 = document.getElementById("x");
+        btn2.style.visibility = "visible";
+        ch = "";
     } else {
         mode = 1;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         btn = document.getElementById("mode");
         btn.textContent = "Mode Fonction";
-        var new_btn = document.getElementById("new");
-        new_btn.remove();
+        var btn2 = document.getElementById("x");
+        btn2.style.visibility = "hidden";
+        ch = "";
     }
 }

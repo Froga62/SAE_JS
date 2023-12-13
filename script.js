@@ -28,3 +28,16 @@ function affiche_value(id) {
     ch += b.value;
     ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
 }
+
+function calculer_tout(){
+    try{
+        ctx.clearRect(0,0, canvas.width, canvas.height);
+        res = eval(ch);
+        ch += "=" + res;
+        ctx.strokeText(ch, canvas.width-10, canvas.height -10);
+    } catch {
+        supprimer_tout()
+
+    }
+
+}

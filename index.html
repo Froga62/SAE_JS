@@ -8,7 +8,7 @@
     <body>
         <div class="Calculatrice">
             <canvas id="canvas"> </canvas>
-            <div class="on_off" value="off">
+            <div class="on_off" id="on_off" value="off">
                 <button id="on" onclick="on_off()">on/off</button>
                 <button id="suppr" onclick="supprimer_tout()">clear</button>
                 <button id="suppr" onclick="suppr()">suppr</button>
@@ -18,7 +18,9 @@
                 <button onclick="affiche_value(this.id)" id="pg" value=")">
                     )
                 </button>
-                <button onclick="affiche_value(this.id)" id="pui" value="**">^</button>
+                <button onclick="affiche_value(this.id)" id="pui" value="**">
+                    ^
+                </button>
                 <button onclick="mode_fonction()" id="mode">Mode Calcul</button>
             </div>
 

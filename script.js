@@ -50,16 +50,22 @@ function suppr() {
 }
 
 function mode_fonction() {
-    if (mode == 1){
+    if (mode == 1) {
         mode = 0;
-        ctx.clearRect(0,0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         btn = document.getElementById("mode");
         btn.textContent = "Mode Calcul";
-        
+        var new_btn = document.createElement("button");
+        new_btn.textContent = "X";
+        new_btn.id = "new";
+        var div = document.getElementById("on_off");
+        div.appendChild(new_btn);
     } else {
         mode = 1;
-        ctx.clearRect(0,0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         btn = document.getElementById("mode");
         btn.textContent = "Mode Fonction";
+        var new_btn = document.getElementById("new");
+        new_btn.remove();
     }
 }

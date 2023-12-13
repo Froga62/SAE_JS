@@ -2,7 +2,7 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var middle = canvas.width / 2;
 ctx.textAlign = "right";
-var ch = new Array();
+var ch = "";
 
 function on_off() {
     if (canvas.style.backgroundColor == "black") {
@@ -17,7 +17,7 @@ function on_off() {
 }
 
 function supprimer_tout() {
-    ch = new Array();
+    ch = "";
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText("", canvas.width - 10, canvas.height - 10);
 }
@@ -29,14 +29,21 @@ function affiche_value(id) {
     ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
 }
 
-function calculer_tout(){
-    try{
-        ctx.clearRect(0,0, canvas.width, canvas.height);
+function calculer_tout() {
+    try {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         res = eval(ch);
         ch = res;
-        ctx.strokeText(ch, canvas.width-10, canvas.height -10);
+        ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
     } catch {
-        supprimer_tout()
+        supprimer_tout();
     }
+}
 
+function suppr() {
+    ch = ch.split("");
+    ch.pop();
+    ch = ch.join("");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
 }

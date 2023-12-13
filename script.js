@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var middle = canvas.width / 2;
-ctx.textAlign = "center";
+ctx.textAlign = "right";
 var ch = new Array();
 
 function on_off() {

@@ -3,6 +3,7 @@ var ctx = canvas.getContext("2d");
 var middle = canvas.width / 2;
 ctx.textAlign = "center";
 var ch = new Array();
+
 function on_off() {
     if (canvas.style.backgroundColor == "black") {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -15,7 +16,7 @@ function on_off() {
     }
 }
 
-function supprimer() {
+function supprimer_tout() {
     ch = new Array();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText("", canvas.width - 10, canvas.height - 10);

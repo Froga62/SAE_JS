@@ -58,6 +58,7 @@ function mode_fonction() {
         var btn2 = document.getElementById("x");
         btn2.style.visibility = "visible";
         ch = "";
+        affiche_quadrillage();
     } else {
         mode = 1;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -67,4 +68,17 @@ function mode_fonction() {
         btn2.style.visibility = "hidden";
         ch = "";
     }
+}
+
+function affiche_quadrillage(){
+    ctx.beginPath();
+    for(var x=10;x<canvas.width-20;x+=10){
+        ctx.moveTo(x,10);
+        ctx.lineTo(x,canvas.height-20);
+    }
+    for(var y=10;y<canvas.width-20;y+=10){
+        ctx.moveTo(10,y);
+        ctx.lineTo(canvas.width-20,y);
+    }
+    ctx.stroke();
 }

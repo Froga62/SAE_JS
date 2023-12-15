@@ -21,6 +21,9 @@ function supprimer_tout() {
     ch = "";
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText("", canvas.width - 10, canvas.height - 10);
+    if (mode == 0) {
+        affiche_quadrillage();
+    }
 }
 
 function affiche_value(id) {
@@ -49,6 +52,9 @@ function suppr() {
     ch.pop();
     ch = ch.join("");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (mode == 0) {
+        affiche_quadrillage();
+    }
     ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
 }
 

@@ -6,7 +6,9 @@
         <title>Calculatrice</title>
     </head>
     <body>
+        
         <div class="Calculatrice">
+
             <canvas id="canvas"> </canvas>
             <div class="on_off" id="on_off" value="off">
                 <button id="on" onclick="on_off()">on/off</button>
@@ -25,6 +27,8 @@
                 <button onclick="affiche_value(this.id)" id="x" value="X">
                     X
                 </button>
+                <button onclick="zoom_in()">Zoom +</button>
+                <button onclick="zoom_out()">Zoom -</button>
             </div>
 
             <div class="bout">
@@ -159,5 +163,6 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </body>
 </html>

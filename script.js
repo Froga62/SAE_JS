@@ -24,18 +24,13 @@ function supprimer_tout() {
 }
 
 function affiche_value(id) {
-    if (mode == 0){
-        ctx.clearRect(canvas.width-20, canvas.height-20,canvas.width , canvas.height);
-        var b = document.getElementById(id);
-        ch += b.value;
-        ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
-    } else {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        var b = document.getElementById(id);
-        ch += b.value;
-        ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (mode == 0) {
+        affiche_quadrillage();
     }
-    
+    var b = document.getElementById(id);
+    ch += b.value;
+    ctx.strokeText(ch, canvas.width - 10, canvas.height - 10);
 }
 
 function calculer_tout() {
@@ -78,15 +73,15 @@ function mode_fonction() {
     }
 }
 
-function affiche_quadrillage(){
+function affiche_quadrillage() {
     ctx.beginPath();
-    for(var x=10;x<=canvas.width-20;x+=10){
-        ctx.moveTo(x,10);
-        ctx.lineTo(x,canvas.height-20);
+    for (var x = 10; x <= canvas.width - 20; x += 10) {
+        ctx.moveTo(x, 10);
+        ctx.lineTo(x, canvas.height - 20);
     }
-    for(var y=10;y<=canvas.height-20;y+=10){
-        ctx.moveTo(10,y);
-        ctx.lineTo(canvas.width-20,y);
+    for (var y = 10; y <= canvas.height - 20; y += 10) {
+        ctx.moveTo(10, y);
+        ctx.lineTo(canvas.width - 20, y);
     }
     ctx.stroke();
 }
